@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Luxury Design & Construction</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Playfair Display", Georgia, serif;
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        color: #f5f5f5;
+        line-height: 1.6;
+      }
+
+      .header {
+        background: rgba(0, 0, 0, 0.9);
+        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        border-bottom: 3px solid #d4af37;
+      }
+
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #d4af37;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+      }
+
+      .nav-links a {
+        color: #f5f5f5;
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 1px;
+        transition: color 0.3s;
+        text-transform: uppercase;
+      }
+
+      .nav-links a:hover {
+        color: #d4af37;
+      }
+
+      .portfolio-header {
+        height: 60vh;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+          url("portfolio-bg.jpg") center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 60px;
+      }
+
+      .portfolio-header h1 {
+        font-size: 56px;
+        color: #d4af37;
+        letter-spacing: 3px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .portfolio-section {
+        padding: 80px 20px;
+        background: #2d2d2d;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 48px;
+        color: #d4af37;
+        margin-bottom: 60px;
+        letter-spacing: 3px;
+      }
+
+      .portfolio-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+      }
+
+      .portfolio-item {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid #d4af37;
+        overflow: hidden;
+        transition: transform 0.3s;
+      }
+
+      .portfolio-item:hover {
+        transform: scale(1.05);
+      }
+
+      .portfolio-item img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .portfolio-info {
+        padding: 25px;
+      }
+
+      .portfolio-info h3 {
+        font-size: 24px;
+        color: #d4af37;
+        margin-bottom: 10px;
+      }
+
+      .portfolio-info p {
+        color: #ccc;
+        font-size: 16px;
+      }
+
+      .contact-section {
+        padding: 80px 20px;
+        background: #1a1a1a;
+        text-align: center;
+        border-top: 3px solid #d4af37;
+      }
+
+      .contact-section h2 {
+        font-size: 42px;
+        color: #d4af37;
+        margin-bottom: 40px;
+        letter-spacing: 2px;
+      }
+
+      .wa-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 50px;
+        background: #25d366;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 50px;
+        transition: all 0.3s;
+        box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+      }
+
+      .wa-button:hover {
+        background: #128c7e;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+      }
+
+      .wa-icon {
+        font-size: 30px;
+      }
+
+      .contact-info {
+        margin-top: 40px;
+        font-size: 18px;
+        color: #aaa;
+      }
+
+      .footer {
+        background: #0a0a0a;
+        padding: 30px 20px;
+        text-align: center;
+        border-top: 2px solid #d4af37;
+      }
+
+      .footer p {
+        color: #666;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-container">
+        <div class="logo">Luxury Build</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portofolio</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="portfolio-header">
+      <h1>K-TRA Design & Construction Experience
+      <img src="logo.png" alt=""width "5%" height"5%" /> </h1>
+    </section>
+
+    <section class="portfolio-section">
+      <h2 class="section-title">Karya Terbaik Kami</h2>
+      <div class="portfolio-grid">
+        <!-- GANTI NAMA FILE GAMBAR SESUAI FILE DI KOMPUTER ANDA -->
+        <div class="portfolio-item">
+          <img src="g7.jpg" alt="" width "75%" height"25%" :         />
+          <div class="portfolio-info">
+            <h3>Pabrik Tekstile Subang</h3>
+            <p>Desain Pabrik 15000m² dengan gaya modern luxury</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="g8.png" alt="" />
+          <div class="portfolio-info">
+            <h3>Interior Ballroom hotel</h3>
+            <p>Referensi Desain interior mewah seluas 1000 m²</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="g1.jpeg" alt="" />
+          <div class="portfolio-info">
+            <h3>Desain Rumah Mewah </h3>
+            <p>Referensi desain rumah mewah di kawasan eksklusif seluas 850 m²</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="g9.png" alt="" />
+          <div class="portfolio-info">
+            <h3>Konstruksi Baja Lift</h3>
+            <p>Pembangunan Rumah Lift Dengan konstruksi baja modern dilapisi penutup ACP</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="g5.jpg" alt="Proyek Komersial" />
+          <div class="portfolio-info">
+            <h3>Konstruksi Baja Pondasi chiler dan AHU</h3>
+            <p>Desain dan Bangun Pondasi chiller dan AHU pergudangan </p>
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <img src="g10.png" alt="" />
+          <div class="portfolio-info">
+            <h3>Desain Interior Rumah Mewah</h3>
+            <p>Referensi desain Interior rumah mewah di kawasan eksklusif</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h2>Hubungi Kami</h2>
+      <p style="font-size: 20px; margin-bottom: 30px; color: #ccc">
+        Siap mewujudkan visi Anda? Hubungi kami sekarang!
+      </p>
+
+      <!-- GANTI NOMOR WA DI BAWAH INI (format: 628xxx tanpa +) -->
+      <a href="https://wa.me/6282142523200" class="wa-button" target="_blank">
+        <span class="wa-icon">💬</span>
+        <span>Chat via WhatsApp</span>
+      </a>
+
+      <div class="contact-info">
+        <p>📱 WhatsApp: 0821-4252-3200</p>
+        <p>📍 Surabaya, East Java, Indonesia</p>
+        <p>🕐 Senin - Sabtu: 08:00 - 17:00</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 Luxury KTRA Design & Construction. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

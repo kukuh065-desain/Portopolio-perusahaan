@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-TRA Design & Construction</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Playfair Display", Georgia, serif;
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        color: #f5f5f5;
+        line-height: 1.6;
+      }
+
+      .header {
+        background: rgba(0, 0, 0, 0.9);
+        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        border-bottom: 3px solid #d4af37;
+      }
+
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #d4af37;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+      }
+
+      .nav-links a {
+        color: #f5f5f5;
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 1px;
+        transition: color 0.3s;
+        text-transform: uppercase;
+      }
+
+      .nav-links a:hover {
+        color: #d4af37;
+      }
+
+      .hero {
+        height: 100vh;
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("city-skyline.jpg") center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 20px;
+        margin-top: 60px;
+      }
+
+      .hero-content {
+        max-width: 800px;
+      }
+
+      .hero h1 {
+        font-size: 64px;
+        color: #d4af37;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .hero p {
+        font-size: 24px;
+        margin-bottom: 40px;
+        color: #e0e0e0;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 15px 40px;
+        background: #d4af37;
+        color: #1a1a1a;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: all 0.3s;
+        border: 2px solid #d4af37;
+      }
+
+      .btn:hover {
+        background: transparent;
+        color: #d4af37;
+      }
+
+      .services {
+        padding: 100px 20px;
+        background: #2d2d2d;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 48px;
+        color: #d4af37;
+        margin-bottom: 60px;
+        letter-spacing: 3px;
+      }
+
+      .services-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+      }
+
+      .service-card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 40px;
+        text-align: center;
+        border: 1px solid #d4af37;
+        transition: transform 0.3s;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .service-card h3 {
+        font-size: 28px;
+        color: #d4af37;
+        margin-bottom: 20px;
+      }
+
+      .footer {
+        background: #1a1a1a;
+        padding: 40px 20px;
+        text-align: center;
+        border-top: 3px solid #d4af37;
+      }
+
+      .footer p {
+        color: #888;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-container">
+        <div class="logo">K-TRA Design & Construction</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portofolio</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>DESAIN & KONSTRUKSI LUXURY</h1>
+        <p>Mewujudkan Visi Misi Anda Menjadi Realitas yang Elegan</p>
+        <a href="portfolio.html" class="btn">Lihat Portofolio</a>
+      </div>
+    </section>
+
+    <section class="services">
+      <h2 class="section-title">Layanan Kami</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Desain Arsitektur</h3>
+          <p>
+            Perancangan bangunan mewah dengan estetika tinggi dan fungsionalitas
+            optimal
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Konstruksi Premium</h3>
+          <p>
+            Pembangunan dengan material terbaik dan tenaga profesional
+            berpengalaman
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Interior Design</h3>
+          <p>
+            Tata ruang mewah yang menciptakan kenyamanan dan kemewahan maksimal
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 Luxury Design & Construction. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
